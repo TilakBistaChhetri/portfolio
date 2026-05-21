@@ -101,12 +101,18 @@ class SkillsPage extends StatelessWidget {
                       imageSize: imageSize,
                     ),
 
+
+
+
                     CustomSkills(
                       title: "Android Studio",
                       titleSize: titleSize,
                       image: MyIcons.android,
                       imageSize: imageSize,
                     ),
+
+
+
 
                     CustomSkills(
                       title: "HTML & CSS",
