@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/core/widget/navigation_drawer/drawer_item.dart';
 
 class CustomNavigationDrawer extends StatelessWidget {
+
+
+
   final VoidCallback onHomeTap;
   final VoidCallback onAboutTap;
   final VoidCallback onSkillsTap;
   final VoidCallback onProjectsTap;
   final VoidCallback onExperienceTap;
-
   final VoidCallback onContactTap;
+
+
 
   const CustomNavigationDrawer({
     super.key,
@@ -17,9 +21,9 @@ class CustomNavigationDrawer extends StatelessWidget {
     required this.onSkillsTap,
     required this.onProjectsTap,
     required this.onExperienceTap,
-
     required this.onContactTap,
   });
+
 
   @override
   Widget build(BuildContext context) {
@@ -46,3 +50,13 @@ class CustomNavigationDrawer extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+

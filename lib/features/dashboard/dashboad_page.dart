@@ -1,3 +1,7 @@
+
+
+
+
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/widget/centered_view/centered_view.dart';
 import 'package:portfolio/core/widget/navigation_bar/custom_navigation_bar.dart';
@@ -22,7 +26,7 @@ class DashboardPageState extends State<DashboardPage> {
 
   final ScrollController scrollController = ScrollController();
 
-  //  SCROLL FUNCTION
+  
   void scrollTo(double position) {
     scrollController.animateTo(
       position,
@@ -41,7 +45,6 @@ class DashboardPageState extends State<DashboardPage> {
           key: _scaffoldKey,
           backgroundColor: const Color.fromARGB(255, 23, 15, 46),
 
-          //  DRAWER
           drawer: CustomNavigationDrawer(
             onHomeTap: () => scrollTo(0),
             onAboutTap: () => scrollTo(height),
@@ -53,10 +56,13 @@ class DashboardPageState extends State<DashboardPage> {
             onContactTap: () => scrollTo(height * 5),
           ),
 
+
+          
+
           body: CenteredView(
             Column(
               children: [
-                //  NAVBAR
+                
                 CustomNavigationBar(
                   onMenuPressed: () {
                     _scaffoldKey.currentState?.openDrawer();
@@ -70,7 +76,10 @@ class DashboardPageState extends State<DashboardPage> {
                   onContactTap: () => scrollTo(height * 5),
                 ),
 
-                //  SCROLLABLE BODY
+               
+
+
+               
                 Expanded(
                   child: SingleChildScrollView(
                     controller: scrollController,
@@ -83,7 +92,7 @@ class DashboardPageState extends State<DashboardPage> {
                           child: const HomePage(),
                         ),
 
-                        //SizedBox(height: 30),
+                       
                         SizedBox(
                           height: height,
                           width: double.infinity,
@@ -122,6 +131,9 @@ class DashboardPageState extends State<DashboardPage> {
                       ],
                     ),
                   ),
+
+
+
                 ),
               ],
             ),
@@ -131,3 +143,7 @@ class DashboardPageState extends State<DashboardPage> {
     );
   }
 }
+
+
+
+
